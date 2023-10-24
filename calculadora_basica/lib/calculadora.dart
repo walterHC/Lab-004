@@ -38,7 +38,7 @@ class _CalculadoraState extends State<Calculadora> {
     return SafeArea(
       child: Scaffold(
           appBar: AppBar(
-            title: Text('Calculadora Basica - Flutter'),
+            title: const Text('Calculadora Basica - Flutter'),
             centerTitle: true,
           ),
           body: Column(
@@ -54,8 +54,8 @@ class _CalculadoraState extends State<Calculadora> {
   Widget headerWidget() {
     return Container(
         color: Colors.grey.withOpacity(0.1),
-        padding: EdgeInsets.all(15),
-        child: Row(
+        padding: const EdgeInsets.all(15),
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Icon(Icons.menu),
@@ -104,8 +104,8 @@ class _CalculadoraState extends State<Calculadora> {
 
   Widget buttonWidget() {
     return Container(
-      padding: EdgeInsets.all(10),
-      color: Color.fromARGB(66, 232, 232, 232),
+      padding: const EdgeInsets.all(10),
+      color: const Color.fromARGB(66, 232, 232, 232),
       child: MasonryGridView.count(
         crossAxisCount: 4,
         mainAxisSpacing: 10,
@@ -138,7 +138,7 @@ class _CalculadoraState extends State<Calculadora> {
       return Colors.redAccent;
     }
     if (item == "=") {
-      return Color.fromARGB(255, 104, 204, 159);
+      return const Color.fromARGB(255, 104, 204, 159);
     }
 
     if (item == "÷" || item == "x" || item == "-" || item == "+") {
